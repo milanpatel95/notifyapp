@@ -33,7 +33,3 @@ exports.getCounts = function(req,res){
     });
   });
 };
-
-exports.clearWorkRecords = funtion(req,res){
-  
-};
