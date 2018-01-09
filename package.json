@@ -1,0 +1,25 @@
+{
+  "name": "notifyapp",
+  "version": "1.0.0",
+  "description": "Storing yes or no from notification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milanpatel95/notifyapp.git"
+  },
+  "author": "milanpatel95",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milanpatel95/notifyapp/issues"
+  },
+  "homepage": "https://github.com/milanpatel95/notifyapp#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.9",
+    "nodemon": "^1.14.9"
+  }
+}
