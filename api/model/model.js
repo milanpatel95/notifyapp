@@ -3,7 +3,7 @@ var RecordData = mongoose.Schema;
 
 var RecordDataSchema = new RecordData({
   workdate:{
-    type:Date
+    type:String
   },
   workstatus:{
     type:Boolean,

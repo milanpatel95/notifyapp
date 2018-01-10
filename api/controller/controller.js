@@ -4,9 +4,10 @@ var mongoose = require('mongoose'),
 WorkRecord = mongoose.model('WorkRecords');
 
 exports.saveWorkRecord = function(req,res){
-  var d = new Date();
-  d.setDate(d.getDate()-1);
-  var new_workrecord = new WorkRecord({'workdate':d,'workstatus':req.header('workstatus')});
+  var date = new Date();
+  date.setTime(date.getTime() + (date.getTimezoneOffset()+330)*60*1000);
+  date.setDate(date.getDate()-1);
+  var new_workrecord = new WorkRecord({'workdate':date.toLocaleString(),'workstatus':req.header('workstatus')});
   new_workrecord.save(function(err,workrecord){
     if(err)
       res.send(err);
